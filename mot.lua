@@ -52,7 +52,7 @@ function put_motion(x_right, y_up)
     if speedB < -1023 then
         speedB = -1023
     end
-    if speedA > 1023 then
+    if speedB > 1023 then
         speedB = 1023
     end
     new_dirA = gpio.LOW
