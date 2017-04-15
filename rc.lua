@@ -1,8 +1,7 @@
-print(wifi.sta.getip())
-wifi.setmode(wifi.STATION)
-wifi.sta.config("Edimax","groo1985")
-tmr.delay(1)
-print(wifi.sta.getip())
+dofile("wifi.lua")
+-- should include :
+-- wifi.setmode(wifi.STATION)
+-- wifi.sta.config("WIFI SSID","PASSWORD")
 
 -- Try to identify myself now and then..
 tmr.alarm(0,3000,1,
